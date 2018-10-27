@@ -61,11 +61,11 @@
 
 \definecolor{white}{RGB}{255,255,255}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{sidecolor}{HTML}{E7E7E7}
-\definecolor{mainblue}{HTML}{0E5484}
+\definecolor{sidecolor}{HTML}{f2f0ea}
+\definecolor{mainblue}{HTML}{6699CC}
 \definecolor{maingray}{HTML}{B9B9B9}
 
-\definecolor{pblue}{HTML}{0395DE}
+\definecolor{pblue}{HTML}{6699CC}
 
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
@@ -75,7 +75,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
-\definecolor{pblue}{HTML}{0395DE}
+\definecolor{pblue}{HTML}{6699CC}
 \definecolor{materialpurple}{HTML}{9C27B0}
 \definecolor{materialindigo}{HTML}{3F51B5}
 \definecolor{materialblue}{HTML}{2196F3}
@@ -155,7 +155,7 @@
 \newcommand\programming[1]{ 
 	\renewcommand{\programming}{
 		\begin{tikzpicture}
-        	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+  %       	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
@@ -166,8 +166,18 @@
 }
 \newcommand\education[1]{ 
 	\renewcommand{\education}{
-		{#1}
+		{\small#1}
 	}
+}
+\newcommand\patents[1]{ 
+  \renewcommand{\patents}{
+    {\small#1}
+  }
+}
+\newcommand\awards[1]{ 
+  \renewcommand{\awards}{
+    {\small#1}
+  }
 }
 
 %----------------------------------------------------------------------------------------
@@ -197,27 +207,29 @@
     %------------------------------------------------
     
     \vspace{3mm}
-    \renewcommand{\arraystretch}{2}
-    \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
+    \renewcommand{\arraystretch}{1}
+    \begin{tabular}{p{1.5cm} @{\hskip 0.5cm}p{5cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
       		{$
               \begin{array}{l}
-              \hspace{4mm} \Huge \textnormal{\faMobile} 
+              % \hspace{4mm} \Huge \textnormal{\faMobile} 
+              \multicolumn{1}{r}{\color{headercolor}\small\textnormal{mobile:}}
               \end{array}
               $} 
             & \cvnumberphone\\}
             
-      \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
-              \end{array}
-              $} 
-            & \href{http://\cvsite}{\cvsite} \\}
+      % \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
+      %       {$
+      %         \begin{array}{l}
+      %         \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
+      %         \end{array}
+      %         $} 
+      %       & \href{http://\cvsite}{\cvsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
+              % \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
+              \color{headercolor}\small\textnormal{email:}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail} \\}
@@ -225,40 +237,51 @@
        \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
+              % \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
+              \color{headercolor}\small\textnormal{LinkedIn:}
               \end{array}
               $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
             }  
-        \ifthenelse{\equal{\cvgithub}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\faGithub}
-              \end{array}
-              $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
-            }   
+        % \ifthenelse{\equal{\cvgithub}{}}{}{
+        %     {$
+        %       \begin{array}{l}
+        %       \hspace{3mm} \huge \textnormal{\faGithub}
+        %       \end{array}
+        %       $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
+        %     }   
             
     \end{tabular}
 
     %------------------------------------------------
-    \vspace{3mm}
+    \vspace{1mm}
     \profilesection{Technical Skills}{1.2cm}
     
-    {\large \textbf{Overview}}
+ %    {\large \textbf{Overview}}
 
-	\skills
+	% \skills
         
         %------------------------------------------------
         
         \vspace{3mm}
        
-	 {\large \textbf{Programming}} 
+        % {\large \textbf{Programming}} 
 
-		 \programming
+		    \programming
          
-        \vspace{3mm}
+        \vspace{2mm}
         \profilesection{Education}{3cm} 
         
         \education
+
+        \vspace{2mm}
+        \profilesection{Patents}{3.8cm} 
+
+        \patents
+
+        \vspace{2mm}
+        \profilesection{Awards}{3.8cm} 
+        
+        \awards
       
   \end{textblock}
 }
@@ -328,8 +351,8 @@
 		{\footnotesize#4}%
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
-		\ifblank{#5}{}{#5 \\}
-		#6%
+		\ifblank{#5}{}{\footnotesize#5}
+		\footnotesize#6%
 	}\\
 }
 
