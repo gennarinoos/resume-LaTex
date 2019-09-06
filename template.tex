@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
@@ -21,7 +21,7 @@
 % Command for printing skill overview bubbles
 % \newcommand\skills{ 
 % ~
-% 	\smartdiagram[bubble diagram]{
+%   \smartdiagram[bubble diagram]{
 %         \textbf{Data}\\\textbf{Engineering},
 %         \textbf{Full Stack}\\\textbf{Dev},
 %         \textbf{~~~~~~~~OOP~~~~~~~~~},
@@ -31,7 +31,7 @@
 % }
 
 % Programming skill bars
-\programming{{Python $\textbullet$ Scala $\textbullet$ Perl / 3}, {C $\textbullet$ C++  $\textbullet$ Java $\textbullet$ Scripting / 5.5}, {Objective-C $\textbullet$ Swift $\textbullet$ JS $\textbullet$ TypeScript / 6}}
+\programming{{Python $\textbullet$ Scala / 3}, {C $\textbullet$ C++  $\textbullet$ Java $\textbullet$ Kotlin / 5.5}, {Objective-C $\textbullet$ Swift $\textbullet$ JS $\textbullet$ TypeScript / 6}}
 
 % Projects text
 \education{
@@ -85,7 +85,7 @@ University of Calabria, 2007.
 }
 
 %----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
+%  PERSONAL INFORMATION
 %----------------------------------------------------------------------------------------
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
@@ -106,7 +106,7 @@ University of Calabria, 2007.
 \makeprofile % Print the sidebar
 
 %----------------------------------------------------------------------------------------
-%	 EXPERIENCE
+%  EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 % \section{Experience}
@@ -114,16 +114,31 @@ University of Calabria, 2007.
 
 \begin{twenty} % Environment for a list with descriptions
     \twentyitem
-        {Jul 2017 -}
+        {March 2019 -}
         {Present}
+        {Sr. Engineering Manager, Health}
+        {\href{http://www.apple.com/}{Apple Inc.}}
+        {Managing the Clinical Health Insights team, whose responsibility include:
+        {\begin{itemize}
+        % \itemsep0em
+        \item Download of Clinical Health Records from major US hospitals in the Health iOS App via FHIR endpoints, preserving the user's privacy.
+        \item Better understanding and reasoning upon CHRs using the Apple Medical Ontology.
+        \end{itemize}}
+        }
+        {}
+     \\
+    \twentyitem
+        {Jul 2017 -}
+        {March 2019}
         {Sr. Engineering Technical Manager, Siri}
         {\href{http://www.apple.com}{Apple Inc.}}
-        {Managing a team of 12 developers, primarily responsible for:
+        {Managing the Siri Distributed Platform team, whose responsibility include:
         {\begin{itemize}
-        \itemsep0em
-        \item Distributed execution of a Siri request using portable code, and the platform for Siri ML models to run inference on-device,
-        \item Supporting Siri fully offline, to enable further personalization of the user experience whilst respecting the user privacy, and improving Siri's performance and reliability,
-        \item Providing the runtime environment for other platforms higher in the stack, such as the publicly known SiriKit and Siri Shortcuts.
+        % \itemsep0em
+        \item Offline Siri support for a subset of domains
+        \item Siri's portable runtime, coordinating SiriKit and non-SiriKit integration points both on server and iOS, watchOS, and macOS.
+        \item Improve Siri's reliability, performance, on lower end devices.
+        % \item Enabled further personalization of Siri's understanding and personalized responses, respecting the user's privacy.
         \end{itemize}}
         }
         {}
@@ -131,16 +146,17 @@ University of Calabria, 2007.
     \twentyitem
         {Jan 2015 -}
         {Jul 2017}
-        {Sr. Software Engineer / Technology Lead, Siri}
+        {Sr. Software Engineer / Tech Lead, Siri}
         {\href{http://www.apple.com}{Apple Inc.}}
-        {Member of both Server and Client Siri Platform teams, delivering features focused on Privacy and Personalization, covering the full stack, and coding in different programming languages on a daily basis. I've mentored many junior engineers, and worked cross-functionally across teams and organizations.}
+        {Senior staff member of the Siri Platform team. Leading the development of features focused on Privacy and Personalization, and mentoring several junior engineers. Large cross-functional work within the company.}
         {
         {\begin{itemize}
-        \item Built a platform and led a team to collect implicit feedback from Siri users, both during and after a Siri request, and perform on-device analysis, respecting the user’s privacy. Patented.
+        \item Built the iOS platform to perform on-device analysis of user engagement with Siri's requests, respecting the user’s privacy. Later extended to capture engagement with other non-Siri features. Patented.
         \item Led the cross-functional work at Apple to collect user engagement, use feedback to replace manual grading, and promote Reinforcement Learning. Patented.
-        \item Built the first Siri user profile on-device, in order to deliver personalized Siri user experiences, and allow Siri itself to promote features to users when appropriate. Data is shared securely over iCloud, across all devices owned by the same user. Patented.
-        \item Built a platform to execute arbitrary code on iOS devices during idle time, updatable out of band. Patented.
-        \item Member of the Siri Architecture Working Group, and contributed to make Siri available offline.
+        \item Built the first Siri user profile on-device (shared over iCloud keychain), with the objective to deliver personalized Siri user experiences. Patented.
+        \item Built a platform for a Siri server to arbitrary code on user's devices while idle. Patented.
+        % \item Member of the Siri Architecture Working Group, and contributed to the offline Siri's architecture definition.
+        \item Built the platform to promote Siri's functionalities in response to specific user behavior. Increased engagement with some features between 5\% and 70\%.
         \end{itemize}}
         }
     \\
@@ -152,27 +168,28 @@ University of Calabria, 2007.
         {}
         {
         {\begin{itemize}
-        \item Built and led a team of 4 developers, and promoted Agile Methodologies, including CI, CD, and TDD.
-        \item Built a content management system as a web tool for Siri use cases, bridging the gap between design, implementation and testing, and contributed in redefining the process for creating a Siri use case. The CMS uses technologies such as Typescript, AngularJS, MongoDB, Solr, and integrates with the GitHub APIs.
-        \item Coordinated cross-functional work across Siri Design, Operations, Security, Machine Learning, Siri Build, Siri ASR and NLP, and Siri QA.
-        \item Led the efforts to improve the XML-based programming language used to define Siri's responses.
-        \item Built tools to explode permutations of Siri's response XML representation, in order to ease the review process of Siri's 
-        utterances by MarCom, Design and Apple Legal.
-        \item Built tools to allow non-technical content creators to deploy Siri responses to production.
+        \item Built and led a team of 4 tool developers, using bleeding-edge technologies (Node.js, Mongo, Elastic, Angular) and promoted Agile Methodologies, including CI, CD, and TDD.
+        \item Re-defined the process for creating Siri's use cases through the inception of new ML pipelines, developer tools, and a brand new CMS as a design / documentation tool.
+        \item Evangelized new toolset with designers Siri designers, Siri Operations, Security, Siri ASR and NLP and other ML Teams.
+        \item Evangelized new toolset with Siri QA, so that the content powering ML models translates into functional tests, and linked to the documentation in the CMS.
+        \item Reduced creation of a Siri use case from weeks to less than 24h.
+        \item Built tools to allow non-technical content creators to deploy Siri responses to production, allowing Marketing, Legal and Design teams to quickly sign-off.
+        \item Re-defined the programming language to code Siri responses, and the toolset to easily preview them (permutations over a declarative language).
         \end{itemize}}
         }
     \\
-	\twentyitem
-    	{Sep 2009 -}
-		{Mar 2012}
+  \twentyitem
+      {Sep 2009 -}
+    {Mar 2012}
         {Software Engineer, Core Localization Technologies}
         {\href{http://www.apple.com}{Apple Inc.}}
         {}
         {
         {\begin{itemize}
-        \item Member of the team responsible to build the tools to streamline the process of localizing Siri in 4+ languages after the acqui-hire, and build the foundation that allows Siri to speak 21+ languages (and counting) today.
-        \item Built a framework for Language Generation, to transform Context Free Grammars (GFGs) into examples suitable to train statistical models.
-        \item Built a rule-based system to learn Context Free Grammars (GFGs) from POS-tagged exemplars.
+        \item Responsible for the Italian Localization of the first iPad.
+        \item Helped build the toolset to streamline the process of localizing Siri in 4+ languages, allowing it to scale to over 30 languages supported.
+        \item Built a framework for "language generation", exploding GFGs into set of examplars to train statistical models.
+        \item Built a rule-based system to learn GFGs from POS-tagged exemplars.
         % \item Maintained and improved the Leverage process for Classic Localization, built on top the Apple Translation Memory (TM).
         \item Built content management system for ”terminology memory”, to define a cross-language glossary of Apple translations, and sistematically leverage previously translation of specific terms across translation units.
         % \item Built various tools to streamline the Localization QA work.
@@ -180,8 +197,8 @@ University of Calabria, 2007.
         }
     \\ 
   %   \twentyitem
-  %  		{Sep 2009 -}
-		% {Jun 2010}
+  %     {Sep 2009 -}
+    % {Jun 2010}
   %       {Localization Engineer \& QA Lead, Localization team}
   %       {\href{http://www.apple.com}{Apple Inc.}}
   %       {}
@@ -193,24 +210,24 @@ University of Calabria, 2007.
   %       }
   %    \\
      \twentyitem
-   		{Feb 2009 -}
-		{Jul 2009}
+      {Feb 2009 -}
+    {Jul 2009}
         {Intern, Localization Engineering}
         {\href{http://www.apple.com/}{Apple Inc.}}
         {}
         {
-        \begin{itemize}
-        \item Lead development of an internal-only iOS applications to facilitate the creation of issues and collection of logs from the device.
-        \item Built Web applications to streamline the in-country issue tracking and reporting of the iPhone International QA team.
-        \end{itemize}
-    	}
+        % \begin{itemize}
+        % \item Lead development of an iOS 3 and MacOS application to facilitate and streamline the collection of logs and tracking of issues.
+        % \item Built Web applications to streamline the in-country iOS 3 bug tracking and status reporting.
+        % \end{itemize}
+      }
      \\
      % \twentyitem
      %    {Jan 2008 -}
      %    {Oct 2009}
      %    {Tutor and Laboratory assistant}
      %    {\href{http://www.unical.it/}{University of Calabria}}
-     %    {Polyvalent student and teacher assistance for over 12 courses, including Artificial Intelligence, Computability and Complexity and Formal Languages and Compilers.}
+     %    {} % {Polyvalent student and teacher assistance for over 12 courses, including Artificial Intelligence, Computability and Complexity and Formal Languages and Compilers.}
      %    {
      %    % \begin{itemize}
      %    % \item Artificial Intelligence,
@@ -237,11 +254,11 @@ University of Calabria, 2007.
         % \end{itemize}
         }
         
-	% \twentyitem{<dates>}{<title>}{<location>}{<description>}
+  % \twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
-%	 EDUCATION
+%  EDUCATION
 %----------------------------------------------------------------------------------------
 % \section{Education}
 % \begin{twenty}
@@ -261,8 +278,8 @@ University of Calabria, 2007.
 %         % \item \textbf{Tags}: C++, Answer Set Programming, Parsers, Compilers \vspace{2mm}
 %         \end{itemize}}
 %         }
-% 	\twentyitem
-%     	{Oct 2004 -}
+%   \twentyitem
+%       {Oct 2004 -}
 %         {Oct 2007}
 %         {Bachelor “Laurea” Degree in Computer Science}
 %         {\href{http://www.unical.it/}{University of Calabria}}
@@ -275,7 +292,7 @@ University of Calabria, 2007.
 %         \item Theoretical work on Semantic Web and Web Services in relation with Answer Set Programming.
 %         \item Implementation of a SPARQL query solver using logic programming reasoning techniques to retrieve results from RDF datasources.
 %         % \item \textbf{Tags}: C++, Java, Semantic Web, Answer Set Programming, RDF, SPARQL, SOAP, WSDL \vspace{2mm}
-% 		\end{itemize}}
+%     \end{itemize}}
 %         }
 % \end{twenty}
 
