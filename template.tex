@@ -31,7 +31,7 @@
 % }
 
 % Programming skill bars
-\programming{{Python $\textbullet$ Scala / 3}, {C $\textbullet$ C++  $\textbullet$ Java $\textbullet$ Kotlin / 5.5}, {Objective-C $\textbullet$ Swift $\textbullet$ JS $\textbullet$ TypeScript / 6}}
+\programming{{Python $\textbullet$ Scala / 3}, {C $\textbullet$ C++  $\textbullet$ Java $\textbullet$ Kotlin / 4}, {Objective-C $\textbullet$ Swift $\textbullet$ JS $\textbullet$ TypeScript / 6}}
 
 % Projects text
 \education{
@@ -95,7 +95,7 @@ University of Calabria, 2007.
 
 \cvlinkedin{in/gennarofrazzingaro}
 \cvgithub{}
-\cvnumberphone{+1 (408) 806 2074} % Phone number
+\cvnumberphone{+1 (408) 896 2074} % Phone number
 % \cvsite{} % Personal website
 \cvmail{gennarinoos@gmail.com} % Email address
 
@@ -116,13 +116,14 @@ University of Calabria, 2007.
     \twentyitem
         {March 2019 -}
         {Present}
-        {Sr. Engineering Manager, Health}
+        {Sr. Engineering Manager, Clinical Health Insights}
         {\href{http://www.apple.com/}{Apple Inc.}}
-        {Managing the Clinical Health Insights team, whose responsibility include:
+        {Managing and growing a team of 5 engineers, whose responsibility include:
         {\begin{itemize}
         % \itemsep0em
-        \item Download of Clinical Health Records from major US hospitals in the Health iOS App via FHIR endpoints, preserving the user's privacy.
-        \item Better understanding and reasoning upon CHRs using the Apple Medical Ontology.
+        \item Developing the platform to download both clinical records from your medical institution, and in-house curated ontology of medical terms derived from SNOMED, LOINC, and others, to the user.
+        \item Enabling charting of etherogenosly coded/labeled records together, and the understanding of drug-drug interactions.
+        \item Laying the groundwork for on-device ML-based predictions over health data.
         \end{itemize}}
         }
         {}
@@ -130,14 +131,15 @@ University of Calabria, 2007.
     \twentyitem
         {Jul 2017 -}
         {March 2019}
-        {Sr. Engineering Technical Manager, Siri}
+        {Sr. Engineering Manager, Siri Distributed Platform}
         {\href{http://www.apple.com}{Apple Inc.}}
-        {Managing the Siri Distributed Platform team, whose responsibility include:
+        {Managed a team of 8 engineers, grew the team from 6 to 8, mentored engineers to take leadership roles in key areas, such as:
         {\begin{itemize}
         % \itemsep0em
-        \item Offline Siri support for a subset of domains
-        \item Siri's portable runtime, coordinating SiriKit and non-SiriKit integration points both on server and iOS, watchOS, and macOS.
-        \item Improve Siri's reliability, performance, on lower end devices.
+        \item Supporting on-device execution to enable better performance, privacy, and personalization of Siri responses, without any loss in developer agility.
+        \item Improving Siri's performance on slower devices, up to 4s faster.
+        \item Making Siri 100\% reliable for a subset of domains, by supporting offline execution.
+        % \item Siri's portable runtime, coordinating SiriKit and non-SiriKit integration points both on server and iOS, watchOS, and macOS.
         % \item Enabled further personalization of Siri's understanding and personalized responses, respecting the user's privacy.
         \end{itemize}}
         }
@@ -146,35 +148,34 @@ University of Calabria, 2007.
     \twentyitem
         {Jan 2015 -}
         {Jul 2017}
-        {Sr. Software Engineer / Tech Lead, Siri}
+        {Sr. Software Engineer, Siri Platform}
         {\href{http://www.apple.com}{Apple Inc.}}
-        {Senior staff member of the Siri Platform team. Leading the development of features focused on Privacy and Personalization, and mentoring several junior engineers. Large cross-functional work within the company.}
+        {Senior staff member of the Siri Platform team. Led the development of several features focused on privacy and personalization, and mentored junior engineers. Led large cross-functional projects across different organizations at Apple.}
         {
         {\begin{itemize}
-        \item Built the iOS platform to perform on-device analysis of user engagement with Siri's requests, respecting the user’s privacy. Later extended to capture engagement with other non-Siri features. Patented.
-        \item Led the cross-functional work at Apple to collect user engagement, use feedback to replace manual grading, and promote Reinforcement Learning. Patented.
-        \item Built the first Siri user profile on-device (shared over iCloud keychain), with the objective to deliver personalized Siri user experiences. Patented.
-        \item Built a platform for a Siri server to arbitrary code on user's devices while idle. Patented.
+        \item \textit{Siri Tips}: increased usage of poorly discoverable Siri features (between 5\% and 70\% increase in daily usage), by promoting them alongside related Siri responses.
+        \item Built the platform to perform on-device analysis of engagement with Siri's responses, without leaking any information about the user. \textit{Patented}.
+        \item Closed the feedback loop for such implicit user corrections to train ML models. Increased overall accuracy for en-US, by amost 10\%.
+        \item Led the cross-functional work at Apple to collect user engagement, use feedback to replace manual grading, and promote Reinforcement Learning. \textit{Patented}.
+        \item Built the first Siri user profile on-device (shared over iCloud keychain), with the objective to deliver personalized Siri user experiences. \textit{Patented}.
+        \item Built a platform for a Siri server to execute arbitrary code on user's devices while idle. \textit{Patented}.
         % \item Member of the Siri Architecture Working Group, and contributed to the offline Siri's architecture definition.
-        \item Built the platform to promote Siri's functionalities in response to specific user behavior. Increased engagement with some features between 5\% and 70\%.
         \end{itemize}}
         }
     \\
     \twentyitem
         {Mar 2012 -}
         {Jan 2015}
-        {Sr. Tools Engineering / Technical Manager, Siri}
+        {Software Engineering Manager, Siri Developer Tools}
         {\href{http://www.apple.com}{Apple Inc.}}
         {}
         {
         {\begin{itemize}
-        \item Built and led a team of 4 tool developers, using bleeding-edge technologies (Node.js, Mongo, Elastic, Angular) and promoted Agile Methodologies, including CI, CD, and TDD.
-        \item Re-defined the process for creating Siri's use cases through the inception of new ML pipelines, developer tools, and a brand new CMS as a design / documentation tool.
-        \item Evangelized new toolset with designers Siri designers, Siri Operations, Security, Siri ASR and NLP and other ML Teams.
-        \item Evangelized new toolset with Siri QA, so that the content powering ML models translates into functional tests, and linked to the documentation in the CMS.
-        \item Reduced creation of a Siri use case from weeks to less than 24h.
-        \item Built tools to allow non-technical content creators to deploy Siri responses to production, allowing Marketing, Legal and Design teams to quickly sign-off.
-        \item Re-defined the programming language to code Siri responses, and the toolset to easily preview them (permutations over a declarative language).
+        \item Built and led a team of 4 junior engineers, promoted Agile Methodologies both withing the team and in Siri.
+        \item Reduced creation of a Siri use case from weeks to less than 24h, through a set of new tools to create Siri's use cases from scratch, and supported the move from rule-based NLP to an ML-based system.
+        \item Helped re-define content workflow for designers, ML developers and QA, enabling seemless translation of design into implementation, then into functional testing.
+        \item Built tools to allow non-technical content creators to deploy Siri responses to production in less than a day, allowing Marketing, Legal and Design teams to quickly sign-off on what was pushed to production.
+        \item Member of the working group in charge of redefining the programming language to code Siri responses, working on the toolset to easily preview them (permutations over a declarative language).
         \end{itemize}}
         }
     \\
@@ -183,15 +184,13 @@ University of Calabria, 2007.
     {Mar 2012}
         {Software Engineer, Core Localization Technologies}
         {\href{http://www.apple.com}{Apple Inc.}}
-        {}
+        {Responsible for the Italian Localization of the first iPad. Built the toolset to improve the agility of localizing and testing Siri, from 5 languages to 30+ languages.}
         {
         {\begin{itemize}
-        \item Responsible for the Italian Localization of the first iPad.
-        \item Helped build the toolset to streamline the process of localizing Siri in 4+ languages, allowing it to scale to over 30 languages supported.
-        \item Built a framework for "language generation", exploding GFGs into set of examplars to train statistical models.
-        \item Built a rule-based system to learn GFGs from POS-tagged exemplars.
+        \item Built framework for "language generation", exploding GFGs into set of examplars to train statistical models.
+        \item Built rule-based system to learn GFGs from POS-tagged exemplars.
         % \item Maintained and improved the Leverage process for Classic Localization, built on top the Apple Translation Memory (TM).
-        \item Built content management system for ”terminology memory”, to define a cross-language glossary of Apple translations, and sistematically leverage previously translation of specific terms across translation units.
+        \item Built a CMS for ”terminology memory”, to define a cross-language glossary of Apple translations, and sistematically leverage previously translation of specific terms across translation units.
         % \item Built various tools to streamline the Localization QA work.
         \end{itemize}}
         }
